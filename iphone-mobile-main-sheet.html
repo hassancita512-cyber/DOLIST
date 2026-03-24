@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Mobile Main Sheet</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --accent:#22c55e;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:var(--text);
+    }
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:24px;
+    }
+    .card{
+      background:rgba(17,24,39,.9);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.28);
+    }
+    .hero{
+      padding:20px 20px 10px;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:28px;
+      line-height:1.2;
+    }
+    p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      color:#fff;
+      background:var(--accent);
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:700;
+    }
+    .btn.secondary{
+      background:#334155;
+    }
+    .frame{
+      padding:14px;
+    }
+    iframe{
+      width:100%;
+      height:78vh;
+      border:0;
+      border-radius:14px;
+      background:#fff;
+    }
+    .note{
+      padding:0 20px 20px;
+      color:#94a3b8;
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero">
+        <h1>iPhone Mobile Main Sheet</h1>
+        <p>Easy access web page for your Google Sheet.</p>
+        <div class="actions">
+          <a class="btn" href="https://docs.google.com/spreadsheets/d/1KfQHiSwfc-ehmMJ7DtoifnJOUvPE3zekc2mwZWn9Dbo/edit?gid=0#gid=0" target="_blank" rel="noopener">Open Full Sheet</a>
+          <a class="btn secondary" href="https://docs.google.com/spreadsheets/d/1KfQHiSwfc-ehmMJ7DtoifnJOUvPE3zekc2mwZWn9Dbo/preview?gid=0" target="_blank" rel="noopener">Open Preview</a>
+        </div>
+      </div>
+
+      <div class="frame">
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/1KfQHiSwfc-ehmMJ7DtoifnJOUvPE3zekc2mwZWn9Dbo/preview?gid=0&rm=minimal"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="note">
+        Note: If the sheet is not already public, first set sharing to “Anyone with the link can view” or publish it to the web in Google Sheets.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
